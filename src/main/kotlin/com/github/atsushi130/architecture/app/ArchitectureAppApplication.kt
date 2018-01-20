@@ -1,11 +1,20 @@
 package com.github.atsushi130.architecture.app
 
+import org.springframework.boot.SpringApplication
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ArchitectureAppApplication
-
-fun main(args: Array<String>) {
-    runApplication<ArchitectureAppApplication>(*args)
+@EnableAutoConfiguration
+class ArchitectureAppApplication {
+    companion object {
+        @JvmStatic fun main(vararg args: String) {
+            try {
+                SpringApplication.run(ArchitectureAppApplication::class.java, *args)
+            } catch (exception: Exception) {
+                println(exception.message)
+            }
+        }
+    }
 }
+
