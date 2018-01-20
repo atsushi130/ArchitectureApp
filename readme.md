@@ -10,3 +10,6 @@
 ❯ cd ArchitectureApp
 ❯ mvn install
 ```
+
+## License
+ArchitectureApp is available under the MIT license. See the [LICENSE file](https://github.com/atsushi130/ArchitectureApp/blob/master/license).
